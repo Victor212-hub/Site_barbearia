@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia</title>
-    <meta name="description" content="Barbearia com os melhores serviços de cabelo e barba. Agende seu horário e experimente um atendimento de qualidade.">
+    <meta name="description"
+        content="Barbearia com os melhores serviços de cabelo e barba. Agende seu horário e experimente um atendimento de qualidade.">
     <meta name="keywords" content="barbearia, corte de cabelo, barba, agendamento, serviços de beleza">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <!-- Cabeçalho -->
+    <!-- Cabeçalho -->
     <header class="cabecalho" id="inicio">
         <div class="cabecalho-interno">
 
             <!-- Abre um menu de navegação para o celular -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="menu-label" aria-label="Abrir menu de navegação">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#quem-somos">Quem somos</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <li><a href="#contato" class="btn-cta">Agende já seu horário</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato" class="btn-cta">Agende já seu horário</a></li>
+                </ul>
+            </nav>
 
         </div>
     </header>
 
     <!-- HERO / BOAS-VINDAS -->
     <main>
-        <section class="hero" id="quem-somos" aria-labelledby="titulo-hero">
+        <section class="hero" id="quem-somos" aria-labelledby="hero-titulo">
             <div class="container">
                 <p class="hero-subtitulo">Salão de Cabeleireiro</p>
                 <h1 id="hero-titulo">Nem Barber</h1>
                 <p class="hero-texto">
-                    Bem-vindo à Nem Barber, onde a arte do 
-                    <strong>corte de cabelo</strong> e da barba se encontra com a excelência em atendimento. Nossa 
-                    <strong>barbearia</strong>é um espaço dedicado a proporcionar uma experiência única para nossos clientes, combinando técnicas tradicionais com um toque moderno. 
-                    <strong>Agende seu horário </strong>e descubra o que significa ser atendido por profissionais apaixonados pelo que fazem. 
+                    Bem-vindo à Nem Barber, onde a arte do
+                    <strong>corte de cabelo</strong> e da barba se encontra com a excelência em atendimento. Nossa
+                    <strong>barbearia</strong> é um espaço dedicado a proporcionar uma experiência única para nossos
+                    clientes, combinando técnicas tradicionais com um toque moderno.
+                    <strong>Agende seu horário </strong>e descubra o que significa ser atendido por profissionais
+                    apaixonados pelo que fazem.
                 </p>
                 <a href="./index.html" class="btn-cta" target="_blank" rel="noopener noreferrer">Agende seu horário</a>
             </div>
@@ -60,9 +65,10 @@
             <div class="container">
 
                 <h2 id="titulo-servicos" class="titulo-secao">Nossos Serviços</h2>
-                <p>Oferecemos uma ampla gama de serviços de cabelo e barba, todos realizados por profissionais qualificados e apaixonados pelo que fazem.</p>
+                <p>Oferecemos uma ampla gama de serviços de cabelo e barba, todos realizados por profissionais
+                    qualificados e apaixonados pelo que fazem.</p>
 
-                <ul class="grip-servicos" role="list">
+                <ul class="grid-servicos" role="list">
                     <li class="card-servicos">
                         <h3>Corte de Cabelo</h3>
                         <p>R$35,00</p>
@@ -80,10 +86,14 @@
                         <p>R$50,00</p>
                         <img src="" alt="">
 
+                    </li>
+
                     <li class="card-servicos">
                         <h3>Design de Sobrancelha</h3>
                         <p>R$20,00</p>
                         <img src="" alt="">
+
+                    </li>
 
                     <li class="card-servicos">
                         <h3>Nevou</h3>
@@ -92,15 +102,27 @@
                     </li>
                 </ul>
         </section>
-    </main>
 
+        <!---Carrossel de imagens-->
+        <section class="galeria" id="galeria" aria-labelledby="titulo-galeria">
+            <div class="container">
 
+                <h2 id="titulo-galeria" class="titulo-galeria">Conheça nosso espaço</h2>
 
+                <div class="carrossel">
+                    <button class="carrossel-btn anterior" aria-label="Imagem anterior">&#10094;</button>
 
+                    <div class="carrossel-imagens">
+                        <img src="" alt="Fachada da barbearia" class="slide ativo">
+                        <img src="" alt="Interior da barbearia" class="slide">
+                        <img src="" alt="Equipamentos da barbearia" class="slide">
+                        <img src="" alt="Geladeira com bebidas disponíveis" class="slide">
+                    </div>
 
+                    <button class="carrossel-btn proximo" aria-label="Próxima imagem">&#10095;</button>
+                </div>
 
+            </div>
 
-
-
-    </body>
+        </section>
 </html>
