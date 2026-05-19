@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia</title>
-    <meta name="description" content="Barbearia com os melhores serviços de cabelo e barba. Agende seu horário e experimente um atendimento de qualidade.">
+    <meta name="description"
+        content="Barbearia com os melhores serviços de cabelo e barba. Agende seu horário e experimente um atendimento de qualidade.">
     <meta name="keywords" content="barbearia, corte de cabelo, barba, agendamento, serviços de beleza">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-     <!-- Cabeçalho -->
+    <!-- Cabeçalho -->
     <header class="cabecalho" id="inicio">
         <div class="cabecalho-interno">
 
             <!-- Abre um menu de navegação para o celular -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="menu-label" aria-label="Abrir menu de navegação">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#quem-somos">Quem somos</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <li><a href="#contato" class="btn-cta">Agende já seu horário</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato" class="btn-cta">Agende já seu horário</a></li>
+                    <li><a href="login.html" class="login-barbeiro">Área do Barbeiro</a></li>
+                </ul>
+            </nav>
 
         </div>
     </header>
 
     <!-- HERO / BOAS-VINDAS -->
     <main>
-        <section class="hero" id="quem-somos" aria-labelledby="titulo-hero">
+        <section class="hero" id="inicio" aria-labelledby="hero-titulo">
             <div class="container">
                 <p class="hero-subtitulo">Salão de Cabeleireiro</p>
                 <h1 id="hero-titulo">Nem Barber</h1>
                 <p class="hero-texto">
-                    Bem-vindo à Nem Barber, onde a arte do 
-                    <strong>corte de cabelo</strong> e da barba se encontra com a excelência em atendimento. Nossa 
-                    <strong>barbearia</strong>é um espaço dedicado a proporcionar uma experiência única para nossos clientes, combinando técnicas tradicionais com um toque moderno. 
-                    <strong>Agende seu horário </strong>e descubra o que significa ser atendido por profissionais apaixonados pelo que fazem. 
+                    Bem-vindo à Nem Barber, onde a arte do
+                    <strong>corte de cabelo</strong> e da barba se encontra com a excelência em atendimento. Nossa
+                    <strong>barbearia</strong> é um espaço dedicado a proporcionar uma experiência única para nossos
+                    clientes, combinando técnicas tradicionais com um toque moderno.
+                    <strong>Agende seu horário </strong>e descubra o que significa ser atendido por profissionais
+                    apaixonados pelo que fazem.
                 </p>
                 <a href="./index.html" class="btn-cta" target="_blank" rel="noopener noreferrer">Agende seu horário</a>
+            </div>
+        </section>
+
+        <section class="quem-somos" id="quem-somos">
+            <div class="container">
+                <h2 class="titulo-secao">Quem somos</h2>
+                <p>
+                    A Nem Barber é uma barbearia focada em estilo, atendimento de qualidade
+                    e uma experiência confortável para cada cliente.
+                </p>
             </div>
         </section>
 
@@ -60,9 +76,10 @@
             <div class="container">
 
                 <h2 id="titulo-servicos" class="titulo-secao">Nossos Serviços</h2>
-                <p>Oferecemos uma ampla gama de serviços de cabelo e barba, todos realizados por profissionais qualificados e apaixonados pelo que fazem.</p>
+                <p>Oferecemos uma ampla gama de serviços de cabelo e barba, todos realizados por profissionais
+                    qualificados e apaixonados pelo que fazem.</p>
 
-                <ul class="grip-servicos" role="list">
+                <ul class="grid-servicos" role="list">
                     <li class="card-servicos">
                         <h3>Corte de Cabelo</h3>
                         <p>R$35,00</p>
@@ -81,10 +98,14 @@
                         <img src="" alt="">
                     </li>
 
+                    </li>
+
                     <li class="card-servicos">
                         <h3>Design de Sobrancelha</h3>
                         <p>R$20,00</p>
                         <img src="" alt="">
+                    </li>
+
                     </li>
 
                     <li class="card-servicos">
@@ -93,8 +114,51 @@
                         <img src="" alt="">
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <!---Carrossel de imagens-->
+        <section class="galeria" id="galeria" aria-labelledby="titulo-galeria">
+            <div class="container">
+
+                <h2 id="titulo-galeria" class="titulo-galeria">Conheça nosso espaço</h2>
+
+                <div class="carrossel">
+                    <button class="carrossel-btn anterior" aria-label="Imagem anterior">&#10094;</button>
+
+                    <div class="carrossel-imagens">
+                        <img src="" alt="Fachada da barbearia" class="slide ativo">
+                        <img src="" alt="Interior da barbearia" class="slide">
+                        <img src="" alt="Equipamentos da barbearia" class="slide">
+                        <img src="" alt="Geladeira com bebidas disponíveis" class="slide">
+                    </div>
+
+                    <button class="carrossel-btn proximo" aria-label="Próxima imagem">&#10095;</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Section localização-->
+
+        <section class="localizacao" id="localizacao">
+            <div class="container">
+                <h2 class="titulo-secao">Localização</h2>
+
+                <p>Venha nos visitar. Estamos esperando por você!</p>
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.403185281607!2d-38.4716161!3d-12.946032700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161abbcc468c4d%3A0xabe7ef3d7a4706d7!2sR.%20Jaqueira%20do%20Carneiro%2C%20175%20-%20Bom%20Ju%C3%A1%2C%20Salvador%20-%20BA%2C%2040353-000!5e0!3m2!1spt-BR!2sbr!4v1779128718304!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
         </section>
     </main>
+<<<<<<< HEAD
     
 
 
@@ -104,5 +168,29 @@
 
 
 
+=======
+
+        
+>>>>>>> 84469e07beaa1fdd6d53827e425f1cef5579c505
     </body>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+
+            <div>
+                <h3>Nem Barber</h3>
+                <p>Estilo, cuidado e atendimento de qualidade</p>
+            </div>
+
+            <div>
+                <p>Whatsapp: (71) 99999-9999</p>
+                <p>Instagram: @nembarber_</p>
+            </div>
+        </div>
+
+        <p class="copy">&copy; 2026 Nem Barber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
