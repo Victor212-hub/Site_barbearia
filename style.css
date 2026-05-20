@@ -9,7 +9,7 @@
         font-size: 16px;
     }
 
-    <!-- Estilo geral --->
+    /* Estilo geral */
 
     body {
         background-color: var(--cor-preta);
@@ -37,4 +37,13 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
+    }
+
+    /*Cabeçalho / Header */
+
+    .cabecalho{
+        background-color: var(--cor-preta);
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
     }
